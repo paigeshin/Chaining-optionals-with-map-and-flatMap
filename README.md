@@ -1,7 +1,8 @@
 # Chaining-optionals-with-map-and-flatMap
 
-// Using map() and flatMap() on optionals you can chain multiple operations without having to use lengthy if lets or guards:
+Using map() and flatMap() on optionals you can chain multiple operations without having to use lengthy if lets or guards:
 
+```swift 
 var myURL: String? = "https://www.naver.com/"
 
 func handle(_ url: URL) {
@@ -22,3 +23,4 @@ handle(url)
 myURL
     .flatMap(URL.init)
     .map(handle)
+```
